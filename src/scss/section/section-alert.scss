@@ -1,0 +1,11 @@
+.site-wrapper{
+    &__alert-wrapper{
+        margin: 20px 0px;
+        min-height: 50px;
+        padding: 0px 50px;
+
+        .alert{
+            padding: 15px;
+        }
+    }
+}

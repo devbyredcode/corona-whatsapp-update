@@ -1,0 +1,123 @@
+<html>
+    <head>
+        <title>Informasi Corona</title>
+        <meta name="author" content="Diki Pupung Ahmadi & Ega Javier Harwenda">
+        <meta name="title" content="Informasi Corona">
+        <meta name="description" content="Notifikasi Whatsapp Informasi Corona">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-title" content="Informasi Corona">
+        <meta name="theme-color" content="#27AE60">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Start of Css -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:400,700,800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./dist/css/main.css">
+        <!-- End of Css -->
+    </head>
+    <body>
+        <div class="site-wrapper container overflow-h">
+            <div class="site-wrapper__logo-wrapper">
+                <img src="./dist/img/main-logo.svg" alt="" class="img-fluid">
+                <p>Informasi Corona Whatsapp</p>
+            </div>
+            <div class="site-wrapper__alert-wrapper">
+                <div class="alert alert-warning alert-dismissible fade" role="alert">
+                    <strong></strong>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </div>
+            <div class="site-wrapper__data-wrapper">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-6">
+                            <div class="site-wrapper__data-wrapper__item">
+                                <div class="item-wrapper">
+                                    <div class="item-wrapper__label">
+                                        <h2>Total Kasus</h2>
+                                    </div>
+                                    <div class="item-wrapper__score">
+                                        <p class="text--red-primary" id="totalCase">-</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <div class="site-wrapper__data-wrapper__item">
+                                <div class="item-wrapper">
+                                    <div class="item-wrapper__label">
+                                        <h2>Total Dirawat</h2>
+                                    </div>
+                                    <div class="item-wrapper__score">
+                                        <p class="text--orange-primary" id="totalTreatedCase">-</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <div class="site-wrapper__data-wrapper__item">
+                                <div class="item-wrapper">
+                                    <div class="item-wrapper__label">
+                                        <h2>Total Meninggal</h2>
+                                    </div>
+                                    <div class="item-wrapper__score">
+                                        <p class="text--grey-primary" id="totalDeathCase">-</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <div class="site-wrapper__data-wrapper__item">
+                                <div class="item-wrapper">
+                                    <div class="item-wrapper__label">
+                                        <h2>Total Sembuh</h2>
+                                    </div>
+                                    <div class="item-wrapper__score">
+                                        <p class="text--green-primary" id="totalHealthCase">-</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="site-wrapper__data-wrapper__label">
+                        <p class="text--grey-primary">Terakhir diperbaharui : <span>26 Mar 2020</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="site-wrapper__action-wrapper">
+                <div class="container">
+                    <div class="site-wrapper__action-wrapper__title">
+                        <h2 class="text--grey-primary">Kirim notifikasi harian ke <span class="text--green-primary">Whatsapp</span> kamu</h2>
+                    </div>
+                    <div class="site-wrapper__action-wrapper__forms">
+                        <div class="forms-wrapper row">
+                            <div class="col-md-4 forms-wrapper__item">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                      <div class="input-group-text">+62</div>
+                                    </div>
+                                    <input type="text" class="form-control input-number input-submit-user" id="inputUserNumber" placeholder="81510937177">
+                                </div>
+                            </div>
+                            <div class="col-md-4 forms-wrapper__item">
+                                <input type="text" class="form-control input-submit-user" id="inputUserName" placeholder="Tulis nama kamu">
+                            </div>
+                            <div class="col-md-4 forms-wrapper__item">
+                                <a href="javascript:void(0)" id="submitUserData" class="btn btn-primary btn--gradient-primary btn--disabled" disabled>Daftarkan Nomor</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <!-- Start of Js -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="./dist/js/bundle.js"></script>
+    <!-- End of Js -->
+</html>

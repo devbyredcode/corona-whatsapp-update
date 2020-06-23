@@ -1,0 +1,12 @@
+.btn{
+    &--disabled{
+        pointer-events: none;
+        background: rgb(194,194,194) !important;
+        background: linear-gradient(135deg, rgba(194,194,194,1) 0%, rgba(150,150,150,1) 60%) !important;
+    }
+
+    &--gradient-primary{
+        background: rgb(140,112,195);
+        background: linear-gradient(135deg, rgba(140,112,195,1) 0%, rgba(90,36,195,1) 60%); 
+    }
+}

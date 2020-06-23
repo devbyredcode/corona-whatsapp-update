@@ -1,0 +1,31 @@
+.site-wrapper{
+    &__logo-wrapper{
+        text-align: center;
+        margin: 50px 0px 20px;
+
+        img{
+            height: 60px;
+
+            @media only screen and (max-width: 768px) {
+                margin: auto;
+                display: block;
+            }
+        }
+
+        p{
+            display: inline;
+            font-weight: 700;
+            font-size: 24px;
+            letter-spacing: .5px;
+
+            @media only screen and (max-width: 768px) {
+                display: block;
+                margin-top: 20px;
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            margin: 20px 0px 20px;
+        }
+    }
+}
